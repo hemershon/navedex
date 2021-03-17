@@ -1,24 +1,15 @@
-# README
+# Navedex Challenge, test for a Ruby on Rails developer job!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is being developed for the company Navedex, as a practical test of development using ruby on rails and the Postgresql bank, the infrastructure part of the application is using docker and docker-compose for container handling.
 
-Things you may want to cover:
+## Ruby version 2.7.1
+## Version of Rails 6.3.1
+## Database Postgresql 
+I'm using **gem devise** for user authentication
+I'm also using the **gem pundit** for user permissions
 
-* Ruby version
 
-* System dependencies
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Modeling the tables:
+![](database.png)
