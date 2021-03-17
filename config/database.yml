@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: db
+  username: postgres
+  password: password
+  pool: 5
+
+development:
+  <<: *default
+  database: navedex_development
+
+test:
+  <<: *default
+  database: navedex_test
+
+production:
+  <<: *default
+  database: navedex_production
+  username: navedex
+  password: <%= ENV['NAVEDEX_DATABASE_PASSWORD'] %>
