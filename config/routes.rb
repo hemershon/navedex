@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  root to: 'sessions#new'
-  devise_for :users,
+  devise_for :users, #defaults: { format: :json },
   path: '',
   path_names: {
     sign_in: 'login',
@@ -8,9 +7,9 @@ Rails.application.routes.draw do
     registration: 'signup'
   },
   controllers: {
-    sessions: 'sessions',
-    registratrions: 'registrations'
+    registratrions: :registrations,
+    sessions: :sessions
   }
-  resource :navers
-  resource :projects
+  resources :navers
+  resources :projects
 end

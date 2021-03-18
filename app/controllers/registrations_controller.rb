@@ -1,14 +1,15 @@
-class RegistrationsController < ApplicationController
+class RegistrationsController < Devise::RegistrationsController
   respond_to :json
 
   def create
-    build_resource(sign_up_params)
-    resource.save
+    user = User.new(sign_up_params)
 
-    if resource.errors.emputy?
-      render json: resource
+    if user.save
+    token = user.generate_jwt
+      render json: token.to_json
     else
-      render json: resource.errors
-    end
+      render json: { errors: { 'email or password' => ['is invalid'] } },
+      status: :unprocessable_entity
+    end 
   end
-end
+  

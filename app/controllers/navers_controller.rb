@@ -1,8 +1,11 @@
 class NaversController < ApplicationController
     
     def index
-        @navers = current_user.navers 
+     navers = Naver.all
+     render json: @navers
+    end
 
-        render json: @navers
+    def show
+      
     end
 end
