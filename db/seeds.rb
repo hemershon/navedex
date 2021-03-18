@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+User.create email: 'hemershon@teste.com', password: 123456
+
+Naver.create name: "Hemershon Silva", birthdate: 2021-17-03, job_role:" Programador"
+
+Project.create name: "Navedex api"

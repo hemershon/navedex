@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root to: 'sessions#new'
   devise_for :users,
   path: '',
   path_names: {
@@ -10,4 +11,6 @@ Rails.application.routes.draw do
     sessions: 'sessions',
     registratrions: 'registrations'
   }
+  resource :navers
+  resource :projects
 end
