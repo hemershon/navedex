@@ -1,3 +1,5 @@
 class Naver < ApplicationRecord
-  has_many :project
+  validates_presence_of :project
+
+  belongs_to :project
 end

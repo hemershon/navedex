@@ -5,7 +5,7 @@ class CreateNavers < ActiveRecord::Migration[6.1]
       t.date :birthdate
       t.string :job_role
       t.date :admission_date
-      t.references :user, null: false, foreign_key: true
+      #t.references :user, null: false, foreign_key: true
 
       t.timestamps
     end
