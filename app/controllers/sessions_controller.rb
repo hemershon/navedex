@@ -9,6 +9,10 @@ class SessionsController < Devise::SessionsController
     end
   end 
   
+  def new 
+    render json: @user
+  end
+  
   private
 
   def user_params

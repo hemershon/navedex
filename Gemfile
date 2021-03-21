@@ -13,6 +13,7 @@ gem 'devise'
 gem 'devise-jwt'
 gem 'devise-i18n'
 gem 'rails-i18n'
+gem 'active_model_serializers'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production

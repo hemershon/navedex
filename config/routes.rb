@@ -10,6 +10,10 @@ Rails.application.routes.draw do
     registratrions: :registrations,
     sessions: :sessions
   }
-  resources :navers
-  resources :projects
+  get '/navers/index', to: 'navers#index'
+  get '/naver/:id/show', to: 'navers#show'
+  get '/naver/store', to: 'navers#store'
+  patch '/naver/update', to: 'navers#update'
+  delete '/delete/:id', to: 'navers#delete'
+  # resources :projects
 end
