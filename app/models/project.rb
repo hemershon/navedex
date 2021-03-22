@@ -1,5 +1,5 @@
 class Project < ApplicationRecord
-    attr_accessor :navers_ids
+  has_and_belongs_to_many :naver
   
   validates :name, presence: true
 end

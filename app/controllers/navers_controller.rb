@@ -17,7 +17,8 @@ class NaversController < ApplicationController
     end
     
     def store
-      @naver = Naver.all
+      @naver = Naver.all 
+      
       render json: @naver
     end
 
@@ -57,8 +58,7 @@ class NaversController < ApplicationController
     end
 
     def valid_project_ids?
-    projects_length = params[:projects].length rescue 0
-    @projects.length == projects_length
+    projects_length = params[:projects].length @projects.length == projects_length
     end
     
     def set_projects
