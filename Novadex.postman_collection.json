@@ -119,19 +119,19 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "localhost:3000/naver/index",
+							"raw": "localhost:3000/navers/index",
 							"host": [
 								"localhost"
 							],
 							"port": "3000",
 							"path": [
-								"naver",
+								"navers",
 								"index"
 							],
 							"query": [
 								{
 									"key": "name",
-									"value": null,
+									"value": "",
 									"disabled": true
 								},
 								{
@@ -213,7 +213,7 @@
 							}
 						],
 						"url": {
-							"raw": "localhost:3000/naver/store",
+							"raw": "localhost:3000/naver/store?id=1",
 							"host": [
 								"localhost"
 							],
@@ -221,6 +221,12 @@
 							"path": [
 								"naver",
 								"store"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
 							]
 						}
 					},
